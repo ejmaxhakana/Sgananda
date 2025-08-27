@@ -7,16 +7,30 @@
 </head>
 <body>
     <header>
+        
+        <div style="padding: 0 0 5px 5px; float: left; height: 40px;">
+      <img src="logo.jpg" 
+           alt="Logo" style="width: auto;
+           height:100%;
+           object-fit: cover;">
+   </div>   
+   <div th:text="|${pagination.currentPageNumber}/${pagination.documentPagesSize}|" class="footer-text">
+   </div>
 
         <div class="header"> <a href="index.html"><h1>Sgananda Divine Beds</h1></Sgananda></a>
         <nav>
             <ul>
                 <li><a href="#BEDS">Beds</a></li>
-                <li><a href="#Rewardprograme">SD Rewards</a></li>
+                <li><a href="Refer.html">Referals</a></li>
                 <li><a href="About.html">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
+        
+        </div>
+
+
     </header>
 
 
@@ -35,8 +49,19 @@
                 Although this bed is not backed by a warranty it still provides exceptional comfort for it's value & still one of our top selling models making it a suitable option for one with a tight budget.</p>
         </div>
         <div class="room">
-            <h3>Single Comfort</h3>
-            <p>A cozy space for solo travelers, complete with a private bathroom and free Wi-Fi.</p>
+            <h3>Soft Touch Pillow Top</h3>
+            <p>Experience the pinnacle of sleep luxury with the Superior Rest Pillow Top Bed.
+                Engineered for optimal comfort, its plush pillow top and soft touch design cradle your body, promoting deeper relaxation and restful sleep.
+                Backed by a 7-year warranty, this bed delivers exceptional quality and long -lasting performance.
+            </p>
+        </div>
+
+         <div class="room">
+            <h3>Superior Rest Firm Support</h3>
+            <p>Built for lasting comfort, the Superior Rest Firm Support bed combines a firm design with a reversable mattress, ensuring optimal support and extendend durability.
+                Backed by a 7-year warranty, this bed provides peace of mind and a restful night's sleep.
+                Wake up feeling refreshed and rejuvenated with the Superior Rest Firm Support.
+            </p>
         </div>
     </section>
 
@@ -70,9 +95,23 @@
 <br>
 
     <footer>
+         
+        <div style="padding: 0 0 5px 5px; float: left; height: 40px;">
+      <img src="logo.jpg" 
+           alt="Logo" style="width: auto;
+           height:100%;
+           object-fit: cover;">
+   </div>   
+   <div th:text="|${pagination.currentPageNumber}/${pagination.documentPagesSize}|" class="footer-text">
+   </div>
+
         <p>&copy; 2025 Sgananda Divine Beds. All rights reserved.</p>
         <a href="https://www.facebook.com/sgananda.divine.beddings.2025"><img src="Facebook.png" alt="facebook" width="40px"></a>
-        <a href="https://wa.me/+27845472255"><img src="whatsapp.jpg" alt="whatsapp" width="40px"></a>
+        <a href="https://wa.me/+27845472255"><img src="whatsapp.jpg" alt="whatsapp" width="40px"></a>     
+        
+
+
+
     </footer>
 </body>
 </html>
