@@ -183,9 +183,23 @@ footer {
 
 
 <footer>
+         
+        <div style="padding: 0 0 5px 5px; float: left; height: 40px;">
+      <img src="logo.jpg" 
+           alt="Logo" style="width: auto;
+           height:100%;
+           object-fit: cover;">
+   </div>   
+   <div th:text="|${pagination.currentPageNumber}/${pagination.documentPagesSize}|" class="footer-text">
+   </div>
+
         <p>&copy; 2025 Sgananda Divine Beds. All rights reserved.</p>
         <a href="https://www.facebook.com/sgananda.divine.beddings.2025"><img src="Facebook.png" alt="facebook" width="40px"></a>
-        <a href="https://wa.me/+27845472255"><img src="whatsapp.jpg" alt="whatsapp" width="40px"></a>
+        <a href="https://wa.me/+27845472255"><img src="whatsapp.jpg" alt="whatsapp" width="40px"></a>     
+        
+
+
+
     </footer>
 
 
