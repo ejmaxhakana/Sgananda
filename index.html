@@ -1,47 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="SD style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="SD style.css">
+    </head>
+
+    <div class="containerhome">
+        <header>
+            
+            <div style="padding: 0 0 5px 5px; float: left; height: 70px;">
+                <img src="logo.jpg" 
+                    alt="Logo" style="width: auto;
+                    height:100%;
+                    object-fit: cover;">
+            </div>   
+                
+            <div th:text="|${pagination.currentPageNumber}/${pagination.documentPagesSize}|" class="footer-text"></div>
+
+            <div class="header"> <a href="index.html"><h1>Sgananda Divine Beds</h1></Sgananda></a></div>
+
+        </header>
+            
+                    <div class="vertical-menu">
+                    <a href="products.html">Products</a>
+                    <a href="#Refer">Raferals</a>
+                    <a href="#contact">contact</a>
+                    </div>
+
+        
+        
+
+
+    
+    </div>
+
 <body>
-    <header>
-        
-        <div style="padding: 0 0 5px 5px; float: left; height: 40px;">
-      <img src="logo.jpg" 
-           alt="Logo" style="width: auto;
-           height:100%;
-           object-fit: cover;">
-   </div>   
-   <div th:text="|${pagination.currentPageNumber}/${pagination.documentPagesSize}|" class="footer-text">
-   </div>
 
-        <div class="header"> <a href="index.html"><h1>Sgananda Divine Beds</h1></Sgananda></a>
-        <nav>
-            <ul>
-                <li><a href="#BEDS">Beds</a></li>
-                <li><a href="Refer.html">Referals</a></li>
-                <li><a href="About.html">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <section id="about">
+        <div class="aboutc">
+        <h2>About Us</h2>
+
+            <div class="room">
+                    <p>
+
+                            Founded in 2021, Sgananda Divine Beds offers premium quality beds designed to provide exceptional comfort and support for a restful night's sleep. 
+
+                    </p>
+
+                    <p>
+                            Our beds are crafted to meet the highest standards, ensuring a perfect blend of style, functionality, and durability. 
+                    </p>
+
+                    <p>
+                            By choosing one of our beds, you'll not only enhance the aesthetic appeal of your bedroom but also invest in your overall well-being.
+                            
+                    <p> 
+                        
+                            beds are the ideal solution for those seeking to improve their sleep quality, increase energy levels, and wake up feeling refreshed and revitalized.
+                    </p>
+
+                    <p>
+                
+                            With Sgananda Divine Beds, you can trust that you're getting a great option for home improvement that will bring long-term benefits to your health and happiness.
+                    </p>
 
         
+
+                    <p>
+                            By choosing one of our beds, you'll not only enhance the aesthetic appeal of your bedroom but also invest in your overall well-being.
+                    
+                    </p>
+
+
+                    <p>     
+                        
+                        beds are the ideal solution for those seeking to improve their sleep quality, increase energy levels, and wake up feeling refreshed and revitalized.
+
+                    </p>
+                    
+                    <p>
+                            With Sgananda Divine Beds, you can trust that you're getting a great option for home improvement that will bring long-term benefits to your health and happiness.
+
+                    </p>
+
+                    <p>
+                        
+                    </p>
+
+                    <p>
+
+                            Visit our online store or contact us today to learn more about how we can help you create your dream home.
+
+                    </p>
+
+            </div>
         </div>
-
-
-    </header>
-
+    </section>
 
     <section id="BEDS">
+        <div class="ourc">
         <h2>Our Beds</h2>
         <div class="room">
             <h3>Classic Pillow Top</h3>
             <p>Experience timeless comfort with the Classic Pillow Top bed, featuring a soft pillow top design on both sides. 
                 Its reversible design allows for effortless maintenance and extended mattress life. 
                 Backed by a 10-year warranty, this bed delivers long-lasting quality and durability. 
-                Sink into the plush softness and wake up feeling refreshed and rejuvenated.</p>
+                Sink into the plush softness and wake up feeling refreshed and rejuvenated.
+            </p>
         </div>
         <div class="room">
             <h3>Royal Deluxe Bamboo Bed</h3>
@@ -61,6 +127,42 @@
             <p>Built for lasting comfort, the Superior Rest Firm Support bed combines a firm design with a reversable mattress, ensuring optimal support and extendend durability.
                 Backed by a 7-year warranty, this bed provides peace of mind and a restful night's sleep.
                 Wake up feeling refreshed and rejuvenated with the Superior Rest Firm Support.
+            </p>
+        </div>
+        </div>
+    </section>
+
+    <section id="Refer">
+        <h2>Refer A Friend Program</h2>
+        <div class="earn">
+            <h3>Earn R250 for every Friend You Refer!</h3>
+            <p>Join our Refer Friend Program and Earn R250 for Every Friend you refer who purchases one of our amazing beds!</p>
+        </div>
+        
+        <div class="how">
+            <h3>How it works:</h3>
+            
+                <ul>
+                    <li>1.Refer a friend to our bed business.</li>
+                    <li>2.Your friend purchases a bed from us.</li>
+                    <li>3.You earn R250 for each successful Referal.</li>
+                </ul>
+                
+            
+        </div>
+        <div class="terms">
+            <h3>Terms And Conditions</h3>
+            <p>
+                -One reward per unique Referal.
+                -Reward paid out after a successful purchase.
+                -Your reward will be tranfarred to your bank account.
+            </p>
+        </div>
+
+         <div class="get">
+            <h3>Superior Rest Firm Support</h3>
+            <p>
+                Share the love and start start referring your friends today!Contact us to learn more about the Refer A Friend Program.
             </p>
         </div>
     </section>
@@ -94,6 +196,8 @@
 <br>
 <br>
 
+</body>
+
     <footer>
          
         <div style="padding: 0 0 5px 5px; float: left; height: 40px;">
@@ -113,5 +217,5 @@
 
 
     </footer>
-</body>
+
 </html>
