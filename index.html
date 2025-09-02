@@ -6,42 +6,55 @@
         <link rel="stylesheet" href="SD style.css">
     </head>
 
-    <div class="containerhome">
-        <header>
-            
-            <div style="padding: 0 0 5px 5px; float: left; height: 70px;">
-                <img src="logo.jpg" 
-                    alt="Logo" style="width: auto;
-                    height:100%;
-                    object-fit: cover;">
-            </div>   
-                
-            <div th:text="|${pagination.currentPageNumber}/${pagination.documentPagesSize}|" class="footer-text"></div>
-
-            <div class="header"> <a href="index.html"><h1>Sgananda Divine Beds</h1></Sgananda></a></div>
-
-        </header>
-            
-                    <div class="vertical-menu">
-                    <a href="products.html">Products</a>
-                    <a href="#Refer">Raferals</a>
-                    <a href="#contact">contact</a>
-                    </div>
-
-        
-        
-
-
-    
-    </div>
 
 <body>
 
+    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="c">
+                <div class="d-i">
+                    <small class="py-2"></i>Opening Hours: Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed </small>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <a href="index.html" class="navbar-b">
+            <h1>Sgananda Divine Beds</h1>
+        </a>
+
+            <div class="navbar2">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Beds</a>
+                <div class="dropdown">
+                     <button class="dropbtn">Coming Soon!!!
+                         <i class="fa fa-caret-down"></i>
+                    </button>
+                            <div class="dropdown-menu">
+                                <a href="price.html" class="dropdown-item">LAY BUY</a>
+                                <a href="testimonial.html" class="dropdown-item">ONLINE PAYMENT</a>
+                                <a href="appointment.html" class="dropdown-item">ONLINE REFERALS</a>
+                            </div>
+                </div>
+                <a href="#contact" class="nav-it">Contact</a>
+            </div>
+        
+    </nav>
+
     <section id="about">
         <div class="aboutc">
-        <h2>About Us</h2>
+
+            <img src="images/room3.jpg" alt="background" style="width:100%;">
+       
 
             <div class="room">
+
+                 <h1>About Us</h1>
                     <p>
 
                             Founded in 2021, Sgananda Divine Beds offers premium quality beds designed to provide exceptional comfort and support for a restful night's sleep. 
@@ -65,24 +78,6 @@
                             With Sgananda Divine Beds, you can trust that you're getting a great option for home improvement that will bring long-term benefits to your health and happiness.
                     </p>
 
-        
-
-                    <p>
-                            By choosing one of our beds, you'll not only enhance the aesthetic appeal of your bedroom but also invest in your overall well-being.
-                    
-                    </p>
-
-
-                    <p>     
-                        
-                        beds are the ideal solution for those seeking to improve their sleep quality, increase energy levels, and wake up feeling refreshed and revitalized.
-
-                    </p>
-                    
-                    <p>
-                            With Sgananda Divine Beds, you can trust that you're getting a great option for home improvement that will bring long-term benefits to your health and happiness.
-
-                    </p>
 
                     <p>
                         
@@ -90,7 +85,7 @@
 
                     <p>
 
-                            Visit our online store or contact us today to learn more about how we can help you create your dream home.
+                           <h3> Visit our online store or contact us today to learn more about how we can help you create your dream home.</h3>
 
                     </p>
 
@@ -133,8 +128,14 @@
     </section>
 
     <section id="Refer">
-        <h2>Refer A Friend Program</h2>
+        <div class="refer">
+
+        <img src="images/bed3.jpg" alt="background" style="width:100%;"  background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: multiply;>
+        
         <div class="earn">
+
+            <h2>Refer A Friend Program</h2>
             <h3>Earn R250 for every Friend You Refer!</h3>
             <p>Join our Refer Friend Program and Earn R250 for Every Friend you refer who purchases one of our amazing beds!</p>
         </div>
@@ -160,10 +161,10 @@
         </div>
 
          <div class="get">
-            <h3>Superior Rest Firm Support</h3>
             <p>
                 Share the love and start start referring your friends today!Contact us to learn more about the Refer A Friend Program.
             </p>
+        </div>
         </div>
     </section>
 
@@ -210,7 +211,7 @@
    </div>
 
         <p>&copy; 2025 Sgananda Divine Beds. All rights reserved.</p>
-        <a href="https://www.facebook.com/sgananda.divine.beddings.2025"><img src="Facebook.png" alt="facebook" width="40px"></a>
+        <a href="https://www.facebook.com/sgananda.divine.beddings.2025"><img src="Facebook.png" alt="facebook" width="70px"></a>
         <a href="https://wa.me/+27845472255"><img src="whatsapp.jpg" alt="whatsapp" width="40px"></a>     
         
 
