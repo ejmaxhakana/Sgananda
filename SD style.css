@@ -171,7 +171,7 @@ footer {
 
 .refer .earn {
   position: absolute;
-  top:  1600px;
+  top:  1900px;
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1;
@@ -181,7 +181,7 @@ footer {
 
 .refer .how {
   position: absolute;
-  top:  1800px;
+  top:  2200px;
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1;
@@ -201,12 +201,18 @@ footer {
 
 .refer .get {
   position: absolute;
-  top:  2170px;
+  top:  2400px;
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
+}
+
+
+.terms ul{
+
+  list-style-type: none;
 }
 
 
