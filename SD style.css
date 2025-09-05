@@ -219,7 +219,7 @@ footer {
 
   width: 100%;
   min-height: 100vh;
-  background-image: url(dental-clinic-website-template/img/bed4.jpg);
+  background-image: url(bed4.jpg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -265,6 +265,7 @@ footer {
   font-size: 35px;
   
 }
+
 
 
 
