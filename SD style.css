@@ -336,7 +336,8 @@ footer {
 }
 
 .products3{
-
+  margin-left: 50px;
+  align-items: center;
   width: 90%;
   max-width: 7050px;
   display: flex;
@@ -344,7 +345,7 @@ footer {
 }
 
 .image3{
-
+  
   flex-basis: 47%;
   background: #241e20;
   transform: scale(1.08);
