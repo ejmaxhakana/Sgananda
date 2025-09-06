@@ -231,7 +231,7 @@ footer {
 
 
 .products{
-
+  margin-left: 100px;
   width: 90%;
   max-width: 7050px;
   display: none; 
@@ -283,7 +283,7 @@ footer {
 }
 
 .products2{
-
+  margin-left: 100px;
   width: 90%;
   max-width: 7050px;
   display: flex;
@@ -336,7 +336,7 @@ footer {
 }
 
 .products3{
-  margin-left: 50px;
+  margin-left: 100px;
   align-items: center;
   width: 90%;
   max-width: 7050px;
