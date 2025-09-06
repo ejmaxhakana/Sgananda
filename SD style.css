@@ -218,8 +218,7 @@ footer {
 .gallery1{
 
   width: 100%;
-  min-height: 100vh;
-  background-image: url(dental-clinic-website-template/img/bed4.jpg);
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -228,87 +227,14 @@ footer {
   overflow: hidden; 
 }
 
-.fade { 
-    animation: fade 1.5s; 
-} 
- 
-@keyframes fade { 
-    from { opacity: 0.4; } 
-    to { opacity: 1; } 
-} 
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: black;
-  font-weight: bold;
-  font-size: 25px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.nav-b{
-  display: flex;
-  position: absolute;
-  bottom: 50px; /* place near bottom */
-  width: 100%;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-.dots-c{
-  text-align: center;
-  position: absolute;
-  bottom: 15px;
-  width: 100%;
-}
 
 
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
 
 .products{
 
   width: 90%;
   max-width: 7050px;
   display: none; 
-}
-
-.products2{
-
-  width: 90%;
-  max-width: 7050px;
-  display: flex;
- 
 }
 
 .image1{
@@ -343,6 +269,115 @@ footer {
   font-size: 35px;
   
 }
+
+.gallery2{
+
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; 
+  margin: auto;
+  overflow: hidden; 
+}
+
+.products2{
+
+  width: 90%;
+  max-width: 7050px;
+  display: flex;
+ 
+}
+
+.image2{
+
+  flex-basis: 47%;
+  background: #241e20;
+  transform: scale(1.08);
+  box-shadow: -10px 5px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.image2 img{
+
+  width: 90%;
+  
+  box-shadow: -10px 5px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.disc2{
+
+  flex-basis: 53%;
+  background: #fff;
+  padding: 40px;
+  padding-left: 60px;
+  font-size: 16px;
+}
+
+.disc2 h1{
+
+  color: #333;
+  font-size: 35px;
+  
+}
+
+.gallery3{
+
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; 
+  margin: auto;
+  overflow: hidden; 
+}
+
+.products3{
+
+  width: 90%;
+  max-width: 7050px;
+  display: flex;
+ 
+}
+
+.image3{
+
+  flex-basis: 47%;
+  background: #241e20;
+  transform: scale(1.08);
+  box-shadow: -10px 5px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.image3 img{
+
+  width: 90%;
+  
+  box-shadow: -10px 5px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.disc3{
+
+  flex-basis: 53%;
+  background: #fff;
+  padding: 40px;
+  padding-left: 60px;
+  font-size: 16px;
+}
+
+.disc3 h1{
+
+  color: #333;
+  font-size: 35px;
+  
+}
+
+
+
 
 
 
