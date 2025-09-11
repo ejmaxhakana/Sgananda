@@ -236,8 +236,8 @@ footer {
   min-height: 20vh;
   margin-left: 100px;
   width: 90%;
-  max-width: 7080px;
-  display: none; 
+  max-width: 7050px;
+  display: flex; 
 }
 
 .image1{
@@ -245,7 +245,7 @@ footer {
   flex-basis: 47%;
   background: #241e20;
   transform: scale(1.08);
-  box-shadow: -10px 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: -10px 5px 10px rgba(0, 0, 0, 0.1);
 
 }
 
