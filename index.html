@@ -1,520 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=1024">
-        <link rel="stylesheet" href="SD style.css">
-    </head>
-
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sgananda Divine Beds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
-        <div class="row gx-0">
-            <div class="c">
-                <div class="d-i">
-                    <small class="py-2"></i>Mon - Fri : 8.00 am - 5.00 pm,  Sat :8.00 am - 3.30 pm, Sun :Closed </small>
-                </div>
-            </div>
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">Sgananda Divine Beds</div>
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Beds</a></li>
+        <li><a href="http://localhost:3000/">Rewards</a></li>
+        <li><a href="policy.html">Policies</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="hero" class="hero fade-in">
+    <div class="hero-content">
+        <h1>Premium Beds for Perfect Sleep</h1>
+        <p>Experience comfort, luxury, and durability with our handcrafted beds.</p>
+        <a href="#products" class="hero-btn">Shop Now</a>
+    </div>
+</section>
+
+
+<!-- PRODUCTS SECTION -->
+<section id="products" class="container fade-in">
+    <h2>Our Beds</h2>
+    <div class="product-carousel">
+        <!-- Product 1 -->
+        <div class="carousel-item fade-in">
+            <img src="classic.jpg" alt="Classic Pillow Top">
+            <h3>Classic Pillow Top</h3>
+            <p>Soft pillow top design on both sides, reversible for easy maintenance. 10-year warranty included.</p>
+            <span class="price">Double: R3,999 | Queen: R4,599</span>
+            <a href="https://wa.me/+27842826842" class="btn-buy">Purchase</a>
+        </div>
+        <!-- Product 2 -->
+        <div class="carousel-item fade-in">
+            <img src="royal.jpg" alt="Royal Deluxe Bamboo Bed">
+            <h3>Royal Deluxe Bamboo Bed</h3>
+            <p>Medium firm surface for solo sleepers, top-selling model with great value.</p>
+            <span class="price">Price: R1,899 (Double only)</span>
+            <a href="https://wa.me/+27842826842" class="btn-buy">Purchase</a>
+        </div>
+        <!-- Product 3 -->
+        <div class="carousel-item fade-in">
+            <img src="soft.jpg" alt="Soft Touch Pillow Top">
+            <h3>Soft Touch Pillow Top</h3>
+            <p>Plush pillow top design with 7-year warranty for superior comfort and restful sleep.</p>
+            <span class="price">Double: R2,899 | Queen: R3,499</span>
+            <a href="https://wa.me/+27842826842" class="btn-buy">Purchase</a>
+        </div>
+        <!-- Product 4 -->
+        <div class="carousel-item fade-in">
+            <img src="superior.jpg" alt="Superior Rest Firm Support">
+            <h3>Superior Rest Firm Support</h3>
+            <p>Firm reversible mattress with 7-year warranty for optimal support and durability.</p>
+            <span class="price">Double: R2,999 | Queen: R3,799</span>
+            <a href="https://wa.me/+27842826842" class="btn-buy">Purchase</a>
+        </div>
+        <!-- Product 5 -->
+        <div class="carousel-item fade-in">
+            <img src="ult.jpg" alt="Ultimate Snooze Bed">
+            <h3>Ultimate Snooze Bed</h3>
+            <p>Soft and cozy one-sided design with 3-year warranty. Perfect solo sleeper bed.</p>
+            <span class="price">Price: R2,499</span>
+            <a href="https://wa.me/+27842826842" class="btn-buy">Purchase</a>
+        </div>
+        <!-- Product 6 -->
+        <div class="carousel-item fade-in">
+            <img src="exe.jpg" alt="Executive Pillow Top">
+            <h3>Executive Pillow Top</h3>
+            <p>Luxurious reversible foam layers with 15-year warranty. High-end comfort guaranteed.</p>
+            <span class="price">Double: R5,799 | Queen: R6,000</span>
+            <a href="https://wa.me/+27842826842" class="btn-buy">Purchase</a>
+        </div>
+        <!-- Product 7 -->
+        <div class="carousel-item fade-in">
+            <img src="budget.jpg" alt="Budget Bliss Double Bed">
+            <h3>Budget Bliss Double Bed</h3>
+            <p>Medium firm option with great value, ideal for tight budgets.</p>
+            <span class="price">Price: R1,699</span>
+            <a href="https://wa.me/+27842826842" class="btn-buy">Purchase</a>
         </div>
     </div>
-    
-
-
-    <!-- Navbar Start -->
-    <nav class="navbar">
-        <a href="index.html" class="navbar-b">
-              <!---- <div style="padding: 0 0 5px 5px; float: left; height: 40px;">
-      <img src="logo.jpg" 
-           alt="Logo" style="width: auto;
-           height:100%;
-           object-fit: cover;">
-   </div> -->
-            <h3>Sgananda Divine Beds</h3>
-        </a>
-
-            <div class="navbar2">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#gallery" class="nav-item nav-link">Beds</a>
-                <div class="dropdown">
-                     <button class="dropbtn">Coming Soon!!!
-                         <i class="fa fa-caret-down"></i>
-                    </button>
-                            <div class="dropdown-menu">
-                                <a href="price.html" class="dropdown-item">LAY BUY</a>
-                                <a href="testimonial.html" class="dropdown-item">ONLINE PAYMENT</a>
-                                <a href="appointment.html" class="dropdown-item">ONLINE REFERALS</a>
-                            </div>
-                </div>
-                <a href="#contact" class="nav-it">Contact</a>
-                </div>
-        
-    </nav>
-
-    <section id="about">
-        <div class="aboutc">
-
-            <img src="Screenshot (22).png" alt="background" style="width:100%;">
-       
-
-            <div class="room">
-
-                <!----<h1>About Us</h1>
-                    <p>
-
-                            Founded in 2021, Sgananda Divine Beds offers premium quality beds designed to provide exceptional comfort and support for a restful night's sleep. 
-
-                    </p>
-
-                    <p>
-                            Our beds are crafted to meet the highest standards, ensuring a perfect blend of style, functionality, and durability. 
-                    </p>
-
-                    <p>
-                            By choosing one of our beds, you'll not only enhance the aesthetic appeal of your bedroom but also invest in your overall well-being.
-                            
-                    <p> 
-                        
-                            beds are the ideal solution for those seeking to improve their sleep quality, increase energy levels, and wake up feeling refreshed and revitalized.
-                    </p>
-
-                    <p>
-                
-                            With Sgananda Divine Beds, you can trust that you're getting a great option for home improvement that will bring long-term benefits to your health and happiness.
-                    </p>
-
-
-                    <p>
-                        
-                    </p>
-
-                    <p>
-
-                           <h3> Visit our online store or contact us today to learn more about how we can help you create your dream home.</h3>
-
-                    </p>-->
-
-            </div>
-        </div>
-    </section>
-
-    <section id="BEDS">
-        <div class="ourc">
-        <h2>Our Beds</h2>
-        <div class="room">
-            <h3>Classic Pillow Top</h3>
-            <p>Experience timeless comfort with the Classic Pillow Top bed, featuring a soft pillow top design on both sides. 
-                Its reversible design allows for effortless maintenance and extended mattress life. 
-                Backed by a 10-year warranty, this bed delivers long-lasting quality and durability. 
-                Sink into the plush softness and wake up feeling refreshed and rejuvenated.
-            </p>
-        </div>
-        <div class="room">
-            <h3>Royal Deluxe Bamboo Bed</h3>
-            <p>This bed provides a medium firm sleeping surface preferably for solo sleepers. 
-                Although this bed is not backed by a warranty it still provides exceptional comfort for it's value & 
-                still one of our top selling models making it a suitable option for one with a tight budget.</p>
-        </div>
-        <div class="room">
-            <h3>Soft Touch Pillow Top</h3>
-            <p>Experience the pinnacle of sleep luxury with the Superior Rest Pillow Top Bed.
-                Engineered for optimal comfort, its plush pillow top and soft touch design cradle your body, promoting deeper relaxation and restful sleep.
-                Backed by a 7-year warranty, this bed delivers exceptional quality and long -lasting performance.
-            </p>
-        </div>
-
-         <div class="room">
-            <h3>Superior Rest Firm Support</h3>
-            <p>Built for lasting comfort, the Superior Rest Firm Support bed combines a firm design with a reversable mattress, ensuring optimal support and extendend durability.
-                Backed by a 7-year warranty, this bed provides peace of mind and a restful night's sleep.
-                Wake up feeling refreshed and rejuvenated with the Superior Rest Firm Support.
-            </p>
-        </div>
-
-         <div class="room">
-            <h3>Ultimate Snooze Bed</h3>
-            <p>
-                Designed with solo sleepers in mind, the Ultimate Snooze Double Bed offers a soft and cozy retreat. 
-                Its one-sided design ensures effortless maintenance, while its plush softness provides the perfect haven for a restful night's sleep. 
-                Backed by a 3-year warranty, you can trust in its quality and durability. Sink into comfort and wake up feeling refreshed and rejuvenated.
-            </p>
-        </div>
-
-         <div class="room">
-            <h3>Executive Pillow Top</h3>
-            <p>
-                This bed provides unbeatable comfort with it's luxurious Pillow top mattress featuring a reversible design with advanced foam technology and multiple layers of comfort. 
-                Backed by an impressive 15-year warranty you can trust that this bed will last for years to come.
-            </p>
-        </div>
-
-          <div class="room">
-            <h3>Budget Bliss Double Bed</h3>
-            <p>
-               This bed provides a medium firm sleeping surface preferably for solo sleepers.
-                Although this bed is not backed by a warranty it still provides exceptional comfort for it's value & still one of our top selling models making it a suitable option for one with a tight budget.
-            </p>
-        </div>
-
-          <div class="room">
-            <h3>Memory lux Dual Comfort Foam Bed</h3>
-            <p>
-                This bed provides unbeatable comfort and support with its special memory foam. Plus, it's reversible, so you can flip it over and get a whole new feel.
-                One side offers a firm sleeping surface, ideal for those who prefer a bit of support, while the other side is soft and plush, perfect for those who love to sink in. 
-                And backed by a 10-year warranty, you can trust it will last for years to come.
-            </p>
-        </div>
-
-        </div>
-    </section>
-
-    <section id="Refer">
-        <div class="refer">
-
-        <img src="Screenshot (26).png" alt="content" style="width:100%;">
-
-        <p></p>
-        <img src="Screenshot (27).png" alt="content" style="width: 100%;">
-        
-       <!--- <div class="earn">
-
-            <h3>Earn R250 for every Friend You Refer!</h3>
-            <p>Join our Refer Friend Program and Earn R250 for Every Friend you refer who purchases one of our amazing beds!</p>
-        </div>
-        
-        <div class="how">
-            <h2>How it works:</h2>
-        
-                <ul>
-                    <li><p>Step1-Refer a friend to our bed business.</p></li>
-                    <li><p>Step2-Your friend purchases a bed from us.</p></li>
-                    <li><p>Step3-You earn R250 for each successful Referal.</p></li>
-                </ul>
-        
-        </div>
-       <div class="terms">
-            <h3>Terms And Conditions</h3>
-            
-                <ul>
-                    <li><p>-One reward per unique Referal.</p></li>
-                    <li><p>-Reward paid out after a successful purchase.</p></li>
-                    <li><p>-Your reward will be tranfarred to your bank account.</p></li>
-                </ul>
-
-        </div>
-
-         <div class="get">
-            <p>
-                Share the love and start start referring your friends today!Contact us to learn more about the Refer A Friend Program.
-            </p>
-        </div>
-        </div>-->
-    </section>
-
-    <section id="gallery">
-        <h2>Divine Beds</h2>
-
-<br>
-<br>
-            <div class="products">
-
-                <div class="image1">
-
-                        <img src="classic.jpg" alt="Room 1" style="width: 100%;">
-
-                </div>
-
-                <div class="disc">
-                    <h1>Classic Pillow Top</h1>
-                    <p>
-                       Experience timeless comfort with the Classic Pillow Top bed, featuring a soft pillow top design on both sides. 
-                         Its reversible design allows for effortless maintenance and extended mattress life. 
-                            Backed by a 10-year warranty, this bed delivers long-lasting quality and durability. 
-                                Sink into the plush softness and wake up feeling refreshed and rejuvenated. 
-                    </p>
-
-                    <p></p>
-                    <p>
-                        <h3>
-                        Double Price-R3.999
-                        <p></p>
-                        Queen Price-R4.599 
-                        </h3>
-                    </p>
-
-            
-            <a href="https://wa.me/+27845472255">  <button class="button">Purchase</button> </a>
-
-                </div>
-            </div>
-
-    
-
-    </section>
-<br>
-<br>
-    <section id="gallery">
-
-            <div class="products2">
-
-                <div class="image2">
-
-                        <img src="royal.jpg" alt="Room 1" style="width: 100%;">
-
-                </div>
-
-                <div class="disc2">
-                    <h1>Royal Deluxe Bamboo Bed</h1>
-                    <p>
-                      This bed provides a medium firm sleeping surface preferably for solo sleepers. 
-                         Although this bed is not backed by a warranty it still provides exceptional comfort for it's value & 
-                             still one of our top selling models making it a suitable option for one with a tight budget.
-                    </p>
-
-                    <p></p>
-                    <p>
-                        <h3>
-                        Price - R1,899 
-                        <p></p>
-                        (Available in double only!!)
-                        </h3>
-                    </p>
-
-                   <a href="https://wa.me/+27845472255">  <button class="button">Purchase</button> </a>
-                </div>
-            </div>
-
-    </section>
-<br>
-<br>
-      <section id="gallery">
-
-            <div class="products3">
-
-                <div class="image3">
-
-                        <img src="soft.jpg" alt="Room 1" style="width: 100%;">
-
-                </div>
-
-                <div class="disc3">
-                    <h1>Soft Touch Pillow Top</h1>
-                    <p>
-                      Experience the pinnacle of sleep luxury with the Superior Rest Pillow Top Bed.
-                        Engineered for optimal comfort, its plush pillow top and soft touch design cradle your body, promoting deeper relaxation and restful sleep.
-                        Backed by a 7-year warranty, this bed delivers exceptional quality and long -lasting performance
-                    </p>
-
-                    <p></p>
-                    <p>
-                        <h3>
-                        Double Price - R2,899 
-                        <p></p>
-                        Queen Price - R3,499
-                        </h3>
-                    </p>
-
-            
-
-                    <a href="https://wa.me/+27845472255">  <button class="button">Purchase</button> </a>
-
-                </div>
-            </div>
-
-
-    </section>
-<br>
-<br>
-
-<section id="gallery">
-
-            <div class="products2">
-
-                <div class="image2">
-
-                        <img src="superior.jpg" alt="Room 1" style="width: 100%;">
-
-                </div>
-
-                <div class="disc2">
-                    <h1>Superior Rest Firm Support</h1>
-                    <p>
-                     Built for lasting comfort, the Superior Rest Firm Support bed combines a firm design with a reversable mattress, ensuring optimal support and extendend durability.
-                         Backed by a 7-year warranty, this bed provides peace of mind and a restful night's sleep.
-                        Wake up feeling refreshed and rejuvenated with the Superior Rest Firm Support.
-
-                    <p></p>
-                    <p>
-                        <h3>
-                        Double Price - R2.999
-                        <p></p>
-                        Queen Price - R3.799
-                        </h3>
-                    </p>
-
-            
-
-                  <a href="https://wa.me/+27845472255">  <button class="button">Purchase</button> </a>
-
-                </div>
-            </div>
-
-
-    </section>
-
-
-<br>
-<br>
-
-    <section id="gallery">
-
-            <div class="products2">
-
-                <div class="image2">
-
-                        <img src="superior.jpg" alt="Room 1" style="width: 100%;">
-
-                </div>
-
-                <div class="disc2">
-                    <h1>Ultimate Snooze Bed</h1>
-                     <p>
-                        Designed with solo sleepers in mind, the Ultimate Snooze Double Bed offers a soft and cozy retreat. 
-                        Its one-sided design ensures effortless maintenance, while its plush softness provides the perfect haven for a restful night's sleep. 
-                        Backed by a 3-year warranty, you can trust in its quality and durability. Sink into comfort and wake up feeling refreshed and rejuvenated.
-                    <p></p>
-                    <p>
-                        <h3>
-                        Price - R2.499
-                        <p></p>
-
-                        </h3>
-                    </p>
-
-            
-
-                   <a href="https://wa.me/+27845472255">  <button class="button">Purchase</button> </a>
-
-                </div>
-            </div>
-
-    </section>
-
-<br>
-<br>
-
-    <section id="gallery">
-
-            <div class="products2">
-
-                <div class="image2">
-
-                        <img src="exe.jpg" alt="Room 1" style="width: 100%;">
-
-                </div>
-
-                <div class="disc2">
-                     <h1>Executive Pillow Top</h1>
-                    <p>
-                        This bed provides unbeatable comfort with it's luxurious Pillow top mattress featuring a reversible design with advanced foam technology and multiple layers of comfort. 
-                        Backed by an impressive 15-year warranty you can trust that this bed will last for years to come.
-                    <p></p>
-                    <p>
-                        <h3>
-                        Double Price - R5.799
-                        <p></p>
-                        Queen Price -R6.000
-                        </h3>
-                    </p>
-
-            
-
-                    <a href="https://wa.me/+27845472255">  <button class="button">Purchase</button> </a>
-
-                </div>
-            </div>
-
-    </section>
-
-<br>
-<br>
-
-    <section id="gallery">
-
-            <div class="products2">
-
-                <div class="image2">
-
-                        <img src="budget.jpg" alt="Room 1" style="width: 100%;">
-
-                </div>
-
-                <div class="disc2">
-                  <h1>Budget Bliss Double Bed</h1>
-                    <p>
-                        This bed provides a medium firm sleeping surface preferably for solo sleepers.
-                        Although this bed is not backed by a warranty it still provides exceptional 
-                        comfort for it's value & still one of our top selling models making it a suitable option for one with a tight budget
-                    <p></p>
-                    <p>
-                        <h3>
-                        Price - R1,699
-                        <p></p>
-                        </h3>
-                    </p>
-
-            
-
-                  <a href="https://wa.me/+27845472255">  <button class="button">Purchase</button> </a>
-
-
-                </div>
-            </div>
-
-    </section>
-
-
-<br>
-<br>
-<br>
-<br>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="https://formsubmit.co/divinebedssgananda@gmail.com" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="phone">Cellphone Number:</label>
-            <input type="tel" name="cell" pattern="(\+27[6-8][0-9]{8}|0[6-8][0-9]{8})" placeholder="0821234567 or +27821234567" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-
-   
-<br>
-<br>
-<br>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="container fade-in">
+    <h2>Contact Us</h2>
+    <form action="https://formsubmit.co/divinebedssgananda@gmail.com" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="cell">Cell:</label>
+        <input type="tel" id="cell" name="cell" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- FIXED WHATSAPP BUTTON -->
+<a href="https://wa.me/+27842826842" class="whatsapp-big">WhatsApp Us</a>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2025 Sgananda Divine Beds. All rights reserved.</p>
+
+    <li><a href="policy.html">Terms and Conditions</a></li>
+</footer>
+
+<!-- Optional JavaScript for Fade-in Animation -->
+<script>
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
+        entries.forEach(entry => {
+            if(!entry.isIntersecting) return;
+            entry.target.classList.add('visible');
+            appearOnScroll.unobserve(entry.target);
+        });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+</script>
 
 </body>
-
-    <footer>
-         
-
-        <p>&copy; 2025 Sgananda Divine Beds. All rights reserved.</p>
-        <a href="https://www.facebook.com/sgananda.divine.beddings.2025"><img src="Facebook.png" alt="facebook" width="70px"></a>
-        <a href="https://wa.me/+27845472255"><img src="whatsapp.jpg" alt="whatsapp" width="70px"></a>     
-        
-
-
-
-    </footer>
-<script src="sd scripts.js"></script>
 </html>
-
-
-

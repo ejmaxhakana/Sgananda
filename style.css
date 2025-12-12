@@ -1,0 +1,442 @@
+/* --- GLOBAL RESET & BASE --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* --- NAVBAR --- */
+nav {
+  background: #0d0d0d;
+  color: white;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav .logo {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e0c37e;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('bb1.jpg') center/cover no-repeat;
+  height: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  text-shadow: 1px 2px 6px black;
+}
+
+.hero-content p {
+  margin-top: 10px;
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #e0c37e;
+  color: #000;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.hero-btn:hover {
+  background: #cfa85b;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* --- SECTION WRAPPER --- */
+.container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+h2.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* --- PRODUCT GRID --- */
+.product-carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.carousel-item {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item:hover img {
+  transform: scale(1.05);
+}
+
+.carousel-item h3 {
+  font-size: 20px;
+  margin: 12px 18px 5px;
+}
+
+.carousel-item p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin: 0 18px 10px;
+}
+
+.price {
+  display: block;
+  margin: 0 18px 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.btn-buy {
+  display: block;
+  margin: 0 18px 18px;
+  text-align: center;
+  padding: 12px;
+  background: #2e7d32;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-buy:hover {
+  background: #256628;
+}
+
+/* --- CONTACT FORM --- */
+form {
+  max-width: 600px;
+  margin: 30px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  resize: vertical;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background: #2e7d32;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+form button:hover {
+  background: #256628;
+  transform: translateY(-2px);
+}
+
+/* --- WHATSAPP BUTTON --- */
+.whatsapp-big {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background: #25d366;
+  color: white;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.whatsapp-big:hover {
+  background: #1ebe57;
+  transform: translateY(-3px);
+}
+
+/* --- FADE-IN EFFECT --- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- FOOTER --- */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
+}
+
+/* --- SMOOTH SCROLL --- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- REWARDS / REFER A FRIEND --- */
+#rewards {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fef7e0;
+    border-radius: 12px;
+    margin: 50px auto;
+}
+
+.rewards-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.reward-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.reward-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.reward-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #2e7d32;
+}
+
+.reward-card p {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+/* REFERRAL FORM */
+#referral-form form {
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+#referral-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+#referral-form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+#referral-form button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background: #2e7d32;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#referral-form button:hover {
+    background: #256628;
+    transform: translateY(-2px);
+}
+
+/* REFERRAL LINK GENERATOR */
+.referral-link {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #fff7e0;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.referral-link input {
+    width: 80%;
+    padding: 12px 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.referral-link button {
+    padding: 12px 25px;
+    background: #2e7d32;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.referral-link button:hover {
+    background: #256628;
+    transform: translateY(-2px);
+}
+
+.referral-link p {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.referral-link .hero-btn {
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}

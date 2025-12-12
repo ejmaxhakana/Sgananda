@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refer a Friend | Sgananda Divine Beds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">Sgananda Divine Beds</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#products">Beds</a></li>
+        <li><a href="rewards.html" class="active">Refer a Friend</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="policy.html">Policies</a></li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero fade-in">
+    <div class="hero-content">
+        <h1>Refer a Friend & Earn Rewards!</h1>
+        <p>Earn R250 for every friend you refer who purchases a bed from Sgananda Divine Beds.</p>
+    </div>
+</section>
+
+<!-- REWARDS STEPS -->
+<section id="rewards" class="container fade-in">
+    <h2>How It Works</h2>
+    <div class="rewards-cards">
+        <div class="reward-card fade-in">
+            <h3>Step 1</h3>
+            <p>Generate your unique referral code below.</p>
+        </div>
+        <div class="reward-card fade-in">
+            <h3>Step 2</h3>
+            <p>Share the code or link with your friends. They will be tracked automatically.</p>
+        </div>
+        <div class="reward-card fade-in">
+            <h3>Step 3</h3>
+            <p>Receive R250 for each successful referral directly into your bank account!</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- REFERRAL FORM -->
+<section id="referral-form" class="container fade-in">
+    <h2>Submit Your Referral</h2>
+    <form id="referralForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="phone">Your Phone:</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <button type="submit">Generate Referral Code</button>
+    </form>
+
+    <div class="result" id="resultDiv" style="display:none;">
+        Your referral code is: <span id="codeSpan"></span>
+    </div>
+</section>
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/+27842826842" class="whatsapp-big">WhatsApp Us</a>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2025 Sgananda Divine Beds. All rights reserved.</p>
+</footer>
+
+<script>
+    // Fade-in animation
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+    const appearOnScroll = new IntersectionObserver(function(entries, observer){
+        entries.forEach(entry => {
+            if(!entry.isIntersecting) return;
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        });
+    }, appearOptions);
+    faders.forEach(fader => appearOnScroll.observe(fader));
+
+    // Referral Code Generator (for display and WhatsApp)
+    async function generateReferralCode() {
+        const username = document.getElementById('username').value.trim();
+        if(username === "") {
+            alert("Please enter your name to generate a referral code.");
+            return;
+        }
+
+        try {
+            const resp = await fetch('/submit', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ name: username, phone: "N/A" })
+            });
+
+            const data = await resp.json();
+            if(!data.code) throw new Error("No code returned");
+
+            const referralCode = data.code;
+            document.getElementById('ref-code-display').textContent = `Your referral code: ${referralCode}`;
+
+            const whatsappBtn = document.getElementById('whatsapp-link');
+            const referralLink = `${window.location.origin}/index.html?ref=${encodeURIComponent(referralCode)}`;
+            whatsappBtn.href = `https://wa.me/?text=Check%20out%20Sgananda%20Divine%20Beds!%20Shop%20here:%20${encodeURIComponent(referralLink)}`;
+            whatsappBtn.style.display = 'inline-block';
+        } catch(err) {
+            console.error(err);
+            alert("Failed to generate referral code. Please try again.");
+        }
+    }
+
+    // Referral Form submission (name + phone)
+    const form = document.getElementById('referralForm');
+    const resultDiv = document.getElementById('resultDiv');
+    const codeSpan = document.getElementById('codeSpan');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+
+        try {
+            const resp = await fetch('/submit', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ name, phone })
+            });
+
+            const data = await resp.json();
+            codeSpan.textContent = data.code;
+            resultDiv.style.display = 'block';
+            form.reset();
+        } catch(err) {
+            console.error(err);
+            alert('Error generating referral code. Please try again.');
+        }
+    });
+</script>
+
+</body>
+</html>

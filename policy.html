@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sgananda Divine Beds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">Sgananda Divine Beds</div>
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Beds</a></li>
+        <li><a href="http://localhost:3000/">Rewards</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="hero" class="hero fade-in">
+    <div class="hero-content">
+        <h1>Refund Policy </h1>
+        <p>
+Sgananda Divine Beds Pty Ltd does not offer refunds on any of our products. All beds and
+mattresses are strictly non-refundable.
+In the unlikely event of a product issue, an inspection and repair will be conducted to
+resolve the matter efficiently and professionally.
+A bed or mattress may only be returned for an exchange if:
+- The product has not been unwrapped or used, and
+- The customer wishes to exchange it for a higher-quality or upgraded mattress.
+All exchange requests are subject to review and approval by our customer service team.
+<br>
+
+<h1>Shipping and Delivery Policy</h1>
+
+<P>We proudly offer same-day deliveries to ensure our customers receive their products
+promptly.
+Our delivery hours are 09:30 to 17:30, Monday to Saturday. Customers are kindly
+requested to ensure availability during these hours to receive their orders.
+Should there be any unforeseen delays, our logistics team will promptly communicate with
+the customer to arrange suitable delivery adjustments.</p>
+<br>
+<p>Contact Information
+For any inquiries or support, please contact us:
+■ Cell: 084 282 6842
+■ Email: sales@sganandadivine.co.za
+■ <a href="https://wa.me/+27842826842" class="whatsapp-big">WhatsApp</a></p>
+    
+</section>
+
+
+    <h2>Our Beds</h2>
+ 
+            <h3></h3>
+            <p>
+</p>
+            
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2025 Sgananda Divine Beds. All rights reserved.</p>
+
+    <li><a href="policy.html">Terms and Conditions</a></li>
+</footer>
+
+<!-- Optional JavaScript for Fade-in Animation -->
+<script>
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
+        entries.forEach(entry => {
+            if(!entry.isIntersecting) return;
+            entry.target.classList.add('visible');
+            appearOnScroll.unobserve(entry.target);
+        });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+</script>
+
+</body>
+</html>
