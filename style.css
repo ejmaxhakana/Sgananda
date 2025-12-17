@@ -440,3 +440,58 @@ footer a:hover {
     text-decoration: underline;
     opacity: 0.8;
 }
+
+/* =====================================================
+   MOBILE-ONLY LAYOUT FIX (SAFE)
+   Triggers ONLY on small screens
+===================================================== */
+@media (max-width: 768px) {
+
+  /* NAVBAR STACK */
+  nav {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  nav .logo {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* HERO ADJUSTMENT */
+  .hero {
+    height: auto;
+    padding: 80px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  /* PRODUCT GRID – NO CHANGE (INTENTIONAL) */
+  /* Keeping your original grid so carousel stays perfect */
+
+  /* WHATSAPP BUTTON */
+  .whatsapp-big {
+    bottom: 15px;
+    right: 15px;
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+
+  /* FOOTER SPACING */
+  footer {
+    padding-bottom: 40px;
+  }
+}
