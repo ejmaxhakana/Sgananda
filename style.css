@@ -479,6 +479,10 @@ footer a:hover {
     font-size: 16px;
   }
 
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
   /* PRODUCT GRID – NO CHANGE (INTENTIONAL) */
   /* Keeping your original grid so carousel stays perfect */
 
@@ -495,3 +499,101 @@ footer a:hover {
     padding-bottom: 40px;
   }
 }
+/* =====================================================
+   CONTACT FORM
+===================================================== */
+#contact form {
+  max-width: 600px;
+  margin: 30px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+#contact form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+#contact form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+#contact form button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background: #2e7d32;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+#contact form button:hover {
+  background: #256628;
+  transform: translateY(-2px);
+}
+
+/* Fade-in effect for other sections */
+#contact.fade-in {
+  opacity: 1; /* visible immediately */
+  transform: translateY(0);
+}
+
+/* =====================================================
+   MOBILE RESPONSIVENESS
+===================================================== */
+@media (max-width: 768px) {
+  #contact form {
+    padding: 25px 15px;
+  }
+
+  #contact form button {
+    font-size: 15px;
+    padding: 14px;
+  }
+
+  #contact form label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact form {
+    padding: 20px 10px;
+  }
+
+  #contact form button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  #contact form input,
+  #contact form textarea {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+}
+
